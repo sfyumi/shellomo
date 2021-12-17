@@ -12,7 +12,7 @@ $ FLOMO_PATH=`pwd`/flomo.sh
 $ cd ~
 $ echo 'alias flomo="'$FLOMO_PATH'"' >> .bash_profile
 $ source .bash_profile
-# if you use zshell, write alias to .zsh_rc
+# if you use zshell, write alias to .zshrc instead
 $ flomo --api https://flomoapp.com/iwh/Mg/yourapisecretskey/
 $ flomo -m "Hello shellomo"
 send "Hello shellomo" to flomo
