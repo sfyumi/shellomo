@@ -59,7 +59,7 @@ msg() {
         API=`head -n 1 $API_PATH`
         MSG=$*
         echo 'send "'$*'" to flomo'
-        curl -s $API -H 'Content-Type: application/json' -d '{"content": "'"$*"'"}'
+        curl -s $API -H 'Content-Type: application/json' -d '{"content": "'"$*"'"}' > /dev/null 2>&1
     else
         echo "!!! Please set api first !!!"
         echo 
